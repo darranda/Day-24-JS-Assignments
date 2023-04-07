@@ -18,7 +18,7 @@ let twoPlayer = {
     name: 'Reese',
     getHand
 }
-console.log(onePlayer)
+
 
 /*Define a function called playRound() that Takes two player objects as arguments
  Gets hands from each
@@ -32,7 +32,7 @@ function playRound (a,b) {
     let reeseHand = twoPlayer.getHand();
 
     if (sarahHand == reeseHand)  {
-        //console.log (`playersHand: ${onePlayer.name} hand played ${sarahHand} while ${twoPlayer.name} hand played ${reeseHand}. Its a tie!`);
+       // console.log (onePlayer.name, 'hand played', sarahHand, 'while', twoPlayer.name, 'hand played', reeseHand,'.', 'Its a tie!');
     }
     else if
         ((sarahHand == 'scissors'&& reeseHand == 'paper') ||
@@ -40,7 +40,7 @@ function playRound (a,b) {
         (sarahHand == 'paper' && reeseHand == 'rock'))
     {
         winner = onePlayer;
-        //console.log (`playerHand: ${onePlayer.name} hand played ${sarahHand}. ${twoPlayer.name} hand played ${reeseHand}. Sarah is the winner!`);
+        //console.log (onePlayer.name,'hand played', sarahHand,'.', twoPlayer.name, 'hand played', reeseHand,'.', 'Sarah is the winner!');
     } 
     else
     
@@ -49,7 +49,7 @@ function playRound (a,b) {
         (reeseHand == 'paper' && sarahHand == 'rock')); 
    { 
         winner = twoPlayer;
-        //console.log (`playerHand: ${twoPlayer.name} hand played ${reeseHand}. ${onePlayer.name} hand played ${sarahHand}. Reese is the winner!`) 
+        //console.log (twoPlayer.name, 'hand played', reeseHand,'.', onePlayer.name, 'hand played', sarahHand, '.', 'Reese is the winner!');
     }
 }
 
@@ -57,4 +57,4 @@ function playRound (a,b) {
     
     playRound (onePlayer, twoPlayer)
 
-    console.log(winner)
+    
